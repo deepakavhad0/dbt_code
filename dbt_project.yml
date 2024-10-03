@@ -40,3 +40,5 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    stg_data:
+      +materialized: table  # by default it will create a view if we are specifying any propertiers like table or view.
