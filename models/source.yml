@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: datafeed_shared_schema
+    database: "{{('SALES_DEV')}}"
+    schema: SOURCE
+
+    tables:
+      - name: CUSTOMER_DATA
+      - name: PAYMENT_DATA
+      - name: ORDERS_DATA
+     
