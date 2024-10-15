@@ -16,7 +16,7 @@ exposures:
       - ref('customer')
       - ref('orders_append')
       - ref('orders_delete')
-      - ref('orders_insert_update')
+      #- ref('orders_insert_update')
       - ref('orders')
       - source('datafeed_shared_schema','CUSTOMER_DATA')
       - source('datafeed_shared_schema','PAYMENT_DATA')
