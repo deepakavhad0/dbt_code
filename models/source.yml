@@ -8,4 +8,12 @@ sources:
       - name: CUSTOMER_DATA
       - name: PAYMENT_DATA
       - name: ORDERS_DATA
-     
+        columns: 
+          - name: id
+            tests:
+              - unique
+              - not_null
+          - name: status
+            tests:
+              - accepted_values:
+                    values: ['placed', 'shipped', 'completed','Recieved', 'returned', 'return_pending']
