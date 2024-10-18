@@ -37,8 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   my_new_project:
-    # Applies to all files under models/example/
-    example:
-      +materialized: table
     stg_data:
       +materialized: table  # by default it will create a view if we are specifying any propertiers like table or view.
+    rkd_poc:
+      +materialized: table
