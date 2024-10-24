@@ -10,6 +10,7 @@ sources:
       - name: META_BU_VERTICAL_CLIENT_INFO
       - name: JOB_CNF_TBL_INFO
       - name: PAYMENT_DATA
+      - name: YOUR_METADATA_TABLE
       - name: ORDERS_DATA
         columns: 
           - name: id
